@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="no-js ie6"><![endif]-->
+<!--[if IE 7 ]><html class="no-js ie7"><![endif]-->
+<!--[if IE 8 ]><html class="no-js ie8"><![endif]-->
+<!--[if IE 9 ]><html class="no-js ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    
+      
+        <title>Configuration - oxd Documentation</title>
+      
+<link href="../assets/stylesheets/font.css" rel="stylesheet">
+      
+      
+      
+    
+    <meta property="og:url" content="None">
+    <meta property="og:title" content="oxd Documentation">
+    <meta property="og:image" content="None/../gluu.jpg">
+    <meta name="apple-mobile-web-app-title" content="oxd Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+      <link rel="apple-touch-icon" href="../gluu.jpg">
+    
+    
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon-60feabe0e5.ico">
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon-60feabe0e5.ico">
+    <style>
+      @font-face {
+      	font-family: 'Icon';
+      	src: url('../assets/fonts/icon.eot?52m981');
+      	src: url('../assets/fonts/icon.eot?#iefix52m981')
+               format('embedded-opentype'),
+      		   url('../assets/fonts/icon.woff?52m981')
+               format('woff'),
+      		   url('../assets/fonts/icon.ttf?52m981')
+               format('truetype'),
+      		   url('../assets/fonts/icon.svg?52m981#icon')
+               format('svg');
+      	font-weight: normal;
+      	font-style: normal;
+      }
+    </style>
+    <link rel="stylesheet" href="../assets/stylesheets/application-f58e216493.css">
+    
+    <link rel="stylesheet" href="../assets/stylesheets/zenburn-28d5b94970.css">
+    
+      
+      
+      
+      <link rel="stylesheet" href="https://fonts.lug.ustc.edu.cn/css?family=Noto Sans:400,700|Source+Code+Pro">
+      <style>
+        body, input {
+          font-family: 'Noto Sans', Helvetica, Arial, sans-serif;
+        }
+        pre, code {
+          font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+        }
+      </style>
+    
+    
+    <script src="../assets/javascripts/modernizr-4a5cc7e01e.js"></script>
+    
+  </head>
+  
+  
+  
+  <body class=" ">
+    
+    <div class="backdrop">
+      <div class="backdrop-paper"></div>
+    </div>
+    <input class="toggle" type="checkbox" id="toggle-drawer">
+    <input class="toggle" type="checkbox" id="toggle-search">
+    <label class="toggle-button overlay" for="toggle-drawer"></label>
+    <header class="header">
+      <nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        
+          <span class="path">
+            
+              
+                oxd Server <i class="icon icon-link"></i>
+              
+            
+          </span>
+        
+        Configuration
+      </div>
+    </div>
+    <div class="button button-search" role="button" aria-label="Search">
+      <label class="toggle-button icon icon-search" title="Search" for="toggle-search"></label>
+    </div>
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" placeholder="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false">
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+    </header>
+    <main class="main">
+      
+      <div class="drawer">
+        <nav aria-label="Navigation">
+
+  
+  <a href="https://github.com/GluuFederation/docs-oxd" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../gluu.jpg">
+        </div>
+      
+      <div class="name">
+        <strong>oxd Documentation</strong><br>
+        version: 
+        
+      </div>
+    </div>
+  </a>
+  <div class="scrollable">
+    <div class="wrapper">
+      <ul class="repo">
+        
+        <li class="home">
+          <a href="/" title="Home">
+            <div class="home-image">
+            <i class="fa fa-home"></i> Doc Home</div>
+          </a>
+        </li>
+        
+        
+        
+        <li class="repo-download">
+          
+          <a href="https://github.com/GluuFederation/docs-oxd/archive/master.zip" target="_blank" title="Download" data-action="download">
+            <i class="icon icon-download"></i> Download
+          </a>
+        </li>
+        
+      </ul>
+      <div class="toc">
+        <ul>
+          
+            
+  <li>
+    <a class="" title="Home" href="..">
+      Home
+    </a>
+    
+  </li>
+                  
+          
+            
+  <li>
+    <span class="section">oxd Server</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Protocol" href="../protocol/">
+      Protocol
+    </a>
+    
+  </li>
+                  
+      
+        
+  <li>
+    <a class="" title="Installation" href="../install/">
+      Installation
+    </a>
+    
+  </li>
+                  
+      
+        
+  <li>
+    <a class="current" title="Configuration" href="./">
+      Configuration
+    </a>
+    
+      
+        
+      
+      
+        <ul>
+          
+            <li class="anchor">
+              <a title="oxd-conf.json" href="#oxd-confjson">
+                <b>oxd-conf.json</b>
+              </a>
+            </li>
+            
+          
+            <li class="anchor">
+              <a title="oxd-default-site-config.json" href="#oxd-default-site-configjson">
+                <b>oxd-default-site-config.json</b>
+              </a>
+            </li>
+            
+          
+            <li class="anchor">
+              <a title="Using Google as an OpenID Provider" href="#using-google-as-an-openid-provider">
+                <b>Using Google as an OpenID Provider</b>
+              </a>
+            </li>
+            
+          
+        </ul>
+      
+    
+  </li>
+                  
+      
+        
+  <li>
+    <a class="" title="Logs" href="../logs/">
+      Logs
+    </a>
+    
+  </li>
+                  
+      
+    </ul>
+  </li>
+                  
+          
+            
+  <li>
+    <span class="section">Versions</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="2.4.4" href="..">
+      2.4.4
+    </a>
+    
+  </li>
+                  
+      
+    </ul>
+  </li>
+                  
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+      </div>
+      <article class="article">
+        <div class="wrapper">
+          
+          <h1 id="configuration">Configuration</h1>
+<p>oxD configuration consists of two files :</p>
+<ul>
+<li><code>conf/oxd-conf.json</code> - general configuration</li>
+<li><code>conf/oxd-default-site-config.json</code> - fallback configuration for "Register site" command, see details on 
+<a href="https://oxd.gluu.org/docs/oxdserver/">Protocol page</a></li>
+</ul>
+<h2 id="oxd-confjson">oxd-conf.json</h2>
+<p>The contents of the configuration file is as follows:</p>
+<pre><code>oxd-conf.json
+{
+    &quot;port&quot;:8099,
+    &quot;localhost_only&quot;:true,
+    &quot;time_out_in_seconds&quot;:0,
+    &quot;use_client_authentication_for_pat&quot;:true,
+    &quot;use_client_authentication_for_aat&quot;:true,
+    &quot;trust_all_certs&quot;:true,
+    &quot;trust_store_path&quot;:&quot;&quot;,
+    &quot;trust_store_password&quot;:&quot;&quot;,
+    &quot;license_id&quot;:&quot;&quot;,
+    &quot;public_key&quot;:&quot;&quot;,
+    &quot;public_password&quot;:&quot;&quot;,
+    &quot;license_password&quot;:&quot;&quot;,
+    &quot;support-google-logout&quot;: true,
+    &quot;state_expiration_in_minutes&quot;:5,
+    &quot;nonce_expiration_in_minutes&quot;:5
+}
+</code></pre>
+
+<ul>
+<li>port - oxD socket port</li>
+<li>localhost_only - flag to restrict communication</li>
+<li>time_out_in_seconds - time out for oxd socket in seconds. oxd closes sockets automatically after this time out (stops listen commands). Zero means listen indefinitely.</li>
+<li>use_client_authentication_for_pat - true if client authentication is required, if false than user authentication is performed which require user_id and user_secret specified during register_site command.</li>
+<li>use_client_authentication_for_aat - true if client authentication is required, if false than user authentication is performed which require user_id and user_secret specified during register_site command.</li>
+<li>trust_all_certs - true to trust all certificates, if false then trust_store_path must be specified to store with valid certificates</li>
+<li>trust_store_path - Path to Java .jks trust store to be used for an SSL connection.</li>
+<li>trust_store_password - password of trust store</li>
+<li>license_id - Will be supplied when you order a license.</li>
+<li>public_key - Will be supplied when you order a license. It's very big--make sure you it's one line with no spaces (if your mail client added line breaks).</li>
+<li>public_password - Will be supplied when you order a license.</li>
+<li>license_password - Will be supplied when you order a license.</li>
+<li>support-google-logout - used only if Google is used as OP</li>
+<li>state_expiration_in_minutes - state expiration time in minutes</li>
+<li>nonce_expiration_in_minutes - nonce expiration time in minutes</li>
+</ul>
+<h2 id="oxd-default-site-configjson">oxd-default-site-config.json</h2>
+<pre><code class="json">conf/oxd-default-site-config.json
+{
+    &quot;op_host&quot;:&quot;&quot;,
+    &quot;authorization_redirect_uri&quot;:&quot;&quot;,
+    &quot;post_logout_redirect_uri&quot;:&quot;&quot;,
+    &quot;response_types&quot;:[&quot;code&quot;],
+    &quot;grant_type&quot;:[&quot;authorization_code&quot;],
+    &quot;acr_values&quot;:[&quot;basic&quot;],
+    &quot;scope&quot;:[&quot;openid&quot;, &quot;profile&quot;],
+    &quot;ui_locales&quot;:[&quot;en&quot;],
+    &quot;claims_locales&quot;:[&quot;en&quot;],
+    &quot;client_jwks_uri&quot;:&quot;&quot;,
+    &quot;contacts&quot;:[]
+}
+</code></pre>
+
+<ul>
+<li>op_host - must point to a valid <a href="http://gluu.org/docs">Gluu Server CE installation</a>. (Sample : "op_host":"https://idp.example.org")</li>
+<li>authorization_redirect_uri - URL that the OpenID Connect Provider (OP) will redirect the person to after  successful authentication</li>
+<li>post_logout_redirect_uri - URL to which the RP is requesting that the End-User's User Agent be redirected after a logout has been performed</li>
+<li>response_types - JSON array containing a list of the OAuth 2.0 response_type values that the site is declaring that it will restrict itself to using</li>
+<li>grant_type - JSON array containing a list of the OAuth 2.0 Grant Types that the Client is declaring that it will restrict itself to using</li>
+<li>acr_values - specified authentication method (basic, duo, u2f)</li>
+<li>scope - JSON array containing a list of the scopes that the Client is declaring that it will restrict itself to using</li>
+<li>ui_locales - End-User's preferred languages and scripts for the user interface, represented as a space-separated list of BCP47 [RFC5646] language tag values, ordered by preference</li>
+<li>claims_locales - End-User's preferred languages and scripts for Claims being returned, represented as a space-separated list of BCP47 [RFC5646] language tag values, ordered by preference</li>
+<li>contacts - array of e-mail addresses of people responsible for this Client</li>
+</ul>
+<h2 id="using-google-as-an-openid-provider">Using Google as an OpenID Provider</h2>
+<p>Google doesn't support the dynamic registration of clients. The clients need to
+be created in the Google API Console. Google's <a href="https://developers.google.com/identity/protocols/OpenIDConnect#appsetup">OpenID Connect page</a>
+gives the complete instructions of how to setup a OpenID Client. Obtain the
+<code>client_id</code> and the <code>client_secret</code> by following the guide's
+<strong>Setting up OAuth 2.0</strong> section and set the callback URI to which users will be
+redirected after authentication.</p>
+<p><img alt="Google client registration" src="https://github.com/GluuFederation/docs-oxd/raw/master/sources/img/google_oidc_client.png" /></p>
+<p>Sample Values:</p>
+<pre><code>op_host = https://accounts.google.com
+redirect_uri = https://test-project.com/login_callback/
+client_id = r7lq4g7n9rb1.apps.googleusercontent.com
+client_secret = 2YOesq2bRCaPI4Ybwc
+</code></pre>
+
+<p><strong>Note:</strong> scope should always have <code>openid</code> as the first value followed by <code>profile</code> or <code>email</code> or both. Refer <a href="https://developers.google.com/identity/protocols/OpenIDConnect#authenticationuriparameters">Google's OIDC docs</a> for the complete explanation of the Google specific paramaters.</p>
+          <aside class="copyright" role="note">
+           Built with 
+            <a href="http://www.mkdocs.org" target="_blank">MkDocs</a> using
+            <a href="http://gitlab.testbird.io:8099/frontend/testbird-mkdocs-theme.git" target="_blank">
+              testBird-mkdocs-theme
+            </a> <br>
+            
+            Copyright &copy; 2016, Gluu, Inc.
+            
+          </aside>
+          
+            <footer class="footer">
+              
+  <nav class="pagination" aria-label="Footer">
+    <div class="previous">
+      
+        <a href="../install/" title="Installation">
+          <span class="direction">
+            Previous
+          </span>
+          <div class="page">
+            <div class="button button-previous" role="button" aria-label="Previous">
+              <i class="icon icon-back"></i>
+            </div>
+            <div class="stretch">
+              <div class="title">
+                Installation
+              </div>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+    <div class="next">
+      
+        <a href="../logs/" title="Logs">
+          <span class="direction">
+            Next
+          </span>
+          <div class="page">
+            <div class="stretch">
+              <div class="title">
+                Logs
+              </div>
+            </div>
+            <div class="button button-next" role="button" aria-label="Next">
+              <i class="icon icon-forward"></i>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+  </nav>
+
+            </footer>
+          
+        </div>
+      </article>
+      <div class="results" role="status" aria-live="polite">
+        <div class="scrollable">
+          <div class="wrapper">
+            <div class="meta"></div>
+            <div class="list"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      var base_url = '..';
+      var repo_id  = '';
+    </script>
+    <script src="../assets/javascripts/application-ce3999cf34.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+    
+  </body>
+</html>
